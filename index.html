@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harsh Sharma | AI & Data Science</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&family=Fraunces:ital,wght@0,700;0,800;1,700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ========== TOP PROGRESS BAR ========== -->
+<div id="progressBar"></div>
+
+<!-- ========== NAVBAR ========== -->
+<nav id="navbar">
+    <a href="#home" class="nav-logo">
+        <span class="logo-hs">HS</span>
+        <span class="logo-text">Harsh</span>
+    </a>
+    <div class="nav-links" id="navLinks">
+        <a href="#home"         class="nav-link active" data-section="home">🏠 Home</a>
+        <a href="#about"        class="nav-link"        data-section="about">👋 About</a>
+        <a href="#skills"       class="nav-link"        data-section="skills">🛠 Skills</a>
+        <a href="#projects"     class="nav-link"        data-section="projects">🚀 Projects</a>
+        <a href="#education"    class="nav-link"        data-section="education">🎓 Education</a>
+        <a href="#achievements" class="nav-link"        data-section="achievements">🏆 Achievements</a>
+        <a href="#contact"      class="nav-link"        data-section="contact">💌 Contact</a>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+    </button>
+</nav>
+
+<!-- ========== HERO ========== -->
+<section id="home" class="hero">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+
+    <div class="hero-inner">
+        <div class="hero-content">
+            <div class="hero-greeting">
+                <span class="wave">👋</span>
+                
+            </div>
+            <h1 class="hero-name">Harsh <span class="hero-name-accent">Sharma</span></h1>
+            <div class="hero-role-wrap">
+                <span class="hero-role-label">I am a DATA ANALYST </span>
+                <span class="hero-role-animated" id="roleText"></span><span class="cursor">|</span>
+            </div>
+            <p class="hero-bio">
+                A passionate B.Tech student in <strong>AI &amp; Data Science</strong> with a love for
+                turning data into real-world solutions. I enjoy coding, learning new tech, and
+                collaborating with others to build cool things. 🚀
+            </p>
+            <div class="hero-cta">
+                <a href="#projects" class="btn btn-primary">See My Projects</a>
+                <a href="#contact"  class="btn btn-outline">Contact Me</a>
+            </div>
+            <div class="hero-socials">
+                <a href="https://www.linkedin.com/in/harsh-sharma-445b66302" target="_blank" class="social-pill">
+                    <svg viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                    LinkedIn
+                </a>
+                <a href="https://github.com/harshsharma745" target="_blank" class="social-pill">
+                    <svg viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C-0.538 18.46-1.332 18-1.332 18c-1.089-.745.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                    GitHub
+                </a>
+                <a href="mailto:harshsharma2444@gmail.com" class="social-pill">
+                    <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                    Email
+                </a>
+            </div>
+        </div>
+
+        <div class="hero-card">
+            <div class="hero-avatar">
+                <div class="avatar-letters">HS</div>
+                <div class="avatar-ring r1"></div>
+                <div class="avatar-ring r2"></div>
+            </div>
+            <div class="sticker sticker-1">🎓 CGPA <strong>9.61</strong></div>
+            <div class="sticker sticker-2">📍 Alwar, Rajasthan</div>
+            <div class="sticker sticker-3">⚡ 4th Semester</div>
+            <div class="sticker sticker-4">🤖 AI &amp; Data Science</div>
+        </div>
+    </div>
+</section>
+
+<!-- ========== ABOUT ========== -->
+<section id="about" class="section">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">About <span class="title-accent">Me</span> 👋</h2>
+            <p class="section-sub">A little bit about who I am and what drives me</p>
+        </div>
+        <div class="about-grid">
+            <div class="about-story card">
+                <div class="card-label">📖 My Story</div>
+                <p>I'm <strong>Harsh Sharma</strong>, a B.Tech student specialising in <em>Artificial Intelligence &amp; Data Science</em> at Arya College of Engineering and IT, Jaipur. Currently in my 4th semester, I'm on a mission to become a skilled Data Analyst.</p>
+                <p>I spend my days learning <strong>Python</strong> for data analysis, practising <strong>DSA</strong> to sharpen my problem-solving, and exploring how AI tools can make everyday work smarter. I believe the best way to learn is by building — so I'm always tinkering with projects.</p>
+                <p>When I'm not coding, you'll find me collaborating with teammates, volunteering at college tech events, or attending workshops to stay ahead of the curve. I'm a quick learner, a team player, and genuinely excited about where this journey is headed.</p>
+            </div>
+            <div class="about-right">
+                <div class="stats-row">
+                    <div class="stat-card card">
+                        <span class="stat-number">9.61</span>
+                        <span class="stat-label">Overall CGPA</span>
+                    </div>
+                    <div class="stat-card card">
+                        <span class="stat-number">5+</span>
+                        <span class="stat-label">Certifications</span>
+                    </div>
+                    <div class="stat-card card">
+                        <span class="stat-number">2</span>
+                        <span class="stat-label">Projects Done</span>
+                    </div>
+                </div>
+                <div class="quick-facts card">
+                    <div class="card-label">⚡ Quick Facts</div>
+                    <ul class="facts-list">
+                        <li><span class="fact-icon">📍</span><span><strong>Location:</strong> Alwar, Rajasthan</span></li>
+                        <li><span class="fact-icon">✉️</span><span><strong>Email:</strong> harshsharma2444@gmail.com</span></li>
+                        <li><span class="fact-icon">📞</span><span><strong>Phone:</strong> +91 6378585048</span></li>
+                        <li><span class="fact-icon">🎓</span><span><strong>Degree:</strong> B.Tech AI &amp; Data Science</span></li>
+                        <li><span class="fact-icon">🎯</span><span><strong>Goal:</strong> Aspiring Data Analyst / AI Engineer</span></li>
+                        <li><span class="fact-icon">💬</span><span><strong>Languages:</strong> Hindi, English</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ========== SKILLS ========== -->
+<section id="skills" class="section section-alt">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">My <span class="title-accent">Skills</span> 🛠</h2>
+            <p class="section-sub">Things I've been learning and working with</p>
+        </div>
+        <div class="skill-tabs">
+            <button class="tab-btn active" data-tab="all">All</button>
+            <button class="tab-btn" data-tab="programming">Programming</button>
+            <button class="tab-btn" data-tab="tools">Tools &amp; Tech</button>
+            <button class="tab-btn" data-tab="soft">Soft Skills</button>
+        </div>
+        <div class="skills-grid" id="skillsGrid">
+            <div class="skill-card card" data-cat="programming">
+                <div class="skill-head"><span class="skill-emoji">🐍</span><span class="skill-name">Python</span><span class="skill-pct">75%</span></div>
+                <div class="skill-bar-wrap"><div class="skill-bar"><div class="skill-fill" data-width="75"></div></div></div>
+                <span class="skill-note">Learning for Data Analysis</span>
+            </div>
+            <div class="skill-card card" data-cat="programming">
+                <div class="skill-head"><span class="skill-emoji">⚙️</span><span class="skill-name">C++</span><span class="skill-pct">70%</span></div>
+                <div class="skill-bar-wrap"><div class="skill-bar"><div class="skill-fill" data-width="70"></div></div></div>
+                <span class="skill-note">Built Currency Converter</span>
+            </div>
+            <div class="skill-card card" data-cat="programming">
+                <div class="skill-head"><span class="skill-emoji">📝</span><span class="skill-name">C</span><span class="skill-pct">75%</span></div>
+                <div class="skill-bar-wrap"><div class="skill-bar"><div class="skill-fill" data-width="75"></div></div></div>
+                <span class="skill-note">Cisco Certified</span>
+            </div>
+            <div class="skill-card card" data-cat="programming">
+                <div class="skill-head"><span class="skill-emoji">🗄️</span><span class="skill-name">MySQL</span><span class="skill-pct">60%</span></div>
+                <div class="skill-bar-wrap"><div class="skill-bar"><div class="skill-fill" data-width="60"></div></div></div>
+                <span class="skill-note">Database Fundamentals</span>
+            </div>
+            <div class="skill-card card" data-cat="tools">
+                <div class="skill-head"><span class="skill-emoji">💻</span><span class="skill-name">VS Code</span><span class="skill-pct">85%</span></div>
+                <div class="skill-bar-wrap"><div class="skill-bar"><div class="skill-fill" data-width="85"></div></div></div>
+                <span class="skill-note">Daily Driver Editor</span>
+            </div>
+            <div class="skill-card card" data-cat="tools">
+                <div class="skill-head"><span class="skill-emoji">🐙</span><span class="skill-name">GitHub</span><span class="skill-pct">65%</span></div>
+                <div class="skill-bar-wrap"><div class="skill-bar"><div class="skill-fill" data-width="65"></div></div></div>
+                <span class="skill-note">Version Control &amp; Repos</span>
+            </div>
+            <div class="skill-card card" data-cat="tools">
+                <div class="skill-head"><span class="skill-emoji">🐧</span><span class="skill-name">Linux</span><span class="skill-pct">45%</span></div>
+                <div class="skill-bar-wrap"><div class="skill-bar"><div class="skill-fill" data-width="45"></div></div></div>
+                <span class="skill-note">Basic Terminal Commands</span>
+            </div>
+            <div class="skill-card card" data-cat="tools">
+                <div class="skill-head"><span class="skill-emoji">🤖</span><span class="skill-name">Prompt Engineering</span><span class="skill-pct">70%</span></div>
+                <div class="skill-bar-wrap"><div class="skill-bar"><div class="skill-fill" data-width="70"></div></div></div>
+                <span class="skill-note">AI-Powered Workflows</span>
+            </div>
+            <div class="skill-card card" data-cat="soft">
+                <div class="skill-head"><span class="skill-emoji">🗣️</span><span class="skill-name">Communication</span><span class="skill-pct">80%</span></div>
+                <div class="skill-bar-wrap"><div class="skill-bar"><div class="skill-fill" data-width="80"></div></div></div>
+                <span class="skill-note">Verbal &amp; Written</span>
+            </div>
+            <div class="skill-card card" data-cat="soft">
+                <div class="skill-head"><span class="skill-emoji">🤝</span><span class="skill-name">Teamwork</span><span class="skill-pct">85%</span></div>
+                <div class="skill-bar-wrap"><div class="skill-bar"><div class="skill-fill" data-width="85"></div></div></div>
+                <span class="skill-note">Collaborative Learner</span>
+            </div>
+            <div class="skill-card card" data-cat="soft">
+                <div class="skill-head"><span class="skill-emoji">🧩</span><span class="skill-name">Problem Solving</span><span class="skill-pct">78%</span></div>
+                <div class="skill-bar-wrap"><div class="skill-bar"><div class="skill-fill" data-width="78"></div></div></div>
+                <span class="skill-note">Practising DSA Daily</span>
+            </div>
+            <div class="skill-card card" data-cat="soft">
+                <div class="skill-head"><span class="skill-emoji">🌱</span><span class="skill-name">Adaptability</span><span class="skill-pct">82%</span></div>
+                <div class="skill-bar-wrap"><div class="skill-bar"><div class="skill-fill" data-width="82"></div></div></div>
+                <span class="skill-note">Quick Learner</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ========== PROJECTS ========== -->
+<section id="projects" class="section">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">My <span class="title-accent">Projects</span> 🚀</h2>
+            <p class="section-sub">Things I've built so far — learning by doing!</p>
+        </div>
+        <div class="projects-grid">
+            <div class="project-card card">
+                <div class="project-badge">Software</div>
+                <div class="project-icon">💱</div>
+                <h3 class="project-title">Currency Converter</h3>
+                <p class="project-desc">A fully functional C++ command-line application that converts between multiple currencies. Features clean input validation, error handling, and an extensible design for adding new currency pairs easily.</p>
+                <div class="project-tags"><span>C++</span><span>CLI App</span><span>Input Validation</span></div>
+                <div class="project-footer">
+                    <a href="https://github.com/harshsharma745" target="_blank" class="project-link">
+                        <svg viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C-0.538 18.46-1.332 18-1.332 18c-1.089-.745.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                        View on GitHub
+                    </a>
+                </div>
+            </div>
+            <div class="project-card card">
+                <div class="project-badge">Hardware</div>
+                <div class="project-icon">🌡️</div>
+                <h3 class="project-title">Temperature Fan Controller</h3>
+                <p class="project-desc">An IoT-inspired hardware project that automatically controls fan speed based on real-time temperature sensor readings. Demonstrates embedded systems thinking and practical sensor integration for smart home automation.</p>
+                <div class="project-tags"><span>Hardware</span><span>Sensors</span><span>IoT</span><span>Automation</span></div>
+                <div class="project-footer">
+                    <a href="#" class="project-link">
+                        <svg viewBox="0 0 24 24" style="width:16px;height:16px;fill:currentColor"><path d="M19 19H5V5h7V3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"/></svg>
+                        Project Details
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ========== EDUCATION ========== -->
+<section id="education" class="section section-alt">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Education <span class="title-accent">Journey</span> 🎓</h2>
+            <p class="section-sub">My academic path so far</p>
+        </div>
+        <div class="edu-timeline">
+            <div class="edu-item edu-current">
+                <div class="edu-dot"><div class="edu-dot-inner"></div></div>
+                <div class="edu-content card">
+                    <div class="edu-header">
+                        <div>
+                            <span class="edu-badge">📚 Currently Here</span>
+                            <h3 class="edu-title">B.Tech — Artificial Intelligence &amp; Data Science</h3>
+                            <p class="edu-institution">Arya College of Engineering and IT, Jaipur</p>
+                        </div>
+                        <span class="edu-years">2022 – Present</span>
+                    </div>
+                    <div class="edu-scores">
+                        <div class="edu-score-card">
+                            <span class="edu-score-label">1st Sem SGPA</span>
+                            <span class="edu-score-val">9.41</span>
+                        </div>
+                        <div class="edu-score-card">
+                            <span class="edu-score-label">2nd Sem SGPA</span>
+                            <span class="edu-score-val">9.80</span>
+                        </div>
+                        <div class="edu-score-card edu-score-highlight">
+                            <span class="edu-score-label">Overall CGPA</span>
+                            <span class="edu-score-val">9.61</span>
+                        </div>
+                    </div>
+                    <p class="edu-note">Currently in 4th Semester · Practising DSA &amp; learning Python for Data Analysis</p>
+                </div>
+            </div>
+            <div class="edu-item">
+                <div class="edu-dot"><div class="edu-dot-inner"></div></div>
+                <div class="edu-content card">
+                    <div class="edu-header">
+                        <div>
+                            <h3 class="edu-title">Class 12th</h3>
+                            <p class="edu-institution">Shivatik Sr. Sec. School, Alwar</p>
+                        </div>
+                        <
